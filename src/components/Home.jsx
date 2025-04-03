@@ -7,7 +7,7 @@ export const Home = () => {
       sx={{
         // border: "1px solid red",
         mx: 19,
-        mb:20
+        mb: 20,
       }}
     >
       <Grid container>
@@ -34,7 +34,7 @@ export const Home = () => {
                 color: "#03045E",
               }}
             >
-              Hello, I'm John,
+              Hello, I'm Sagar,
             </Typography>
             <Typography
               variant="h1"
@@ -46,7 +46,7 @@ export const Home = () => {
                 color: "#03045E",
               }}
             >
-              Product Designer
+              Software Developer
             </Typography>
             <Typography
               variant="h6"
@@ -59,12 +59,12 @@ export const Home = () => {
                 mb: 5,
               }}
             >
-              based in Netherland.
+              New Delhi
             </Typography>
 
             <Box
               sx={{
-                bgcolor: "yellow",
+                bgcolor: "#F5EE84",
                 maxWidth: 158,
                 height: 62,
                 borderRadius: 1,

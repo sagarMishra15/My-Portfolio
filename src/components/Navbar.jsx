@@ -32,7 +32,7 @@ export const Navbar = () => {
               fontSize: 24,
             }}
           >
-            John Doe
+            || SAGAR ||
           </Typography>
         </Box>
         <Box
