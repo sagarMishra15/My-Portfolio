@@ -5,10 +5,8 @@ export const About = () => {
   return (
     <Box
       sx={{
-        // border: "1px solid blue",
-        height: 500,
-        // width: "100%",
         mx: 19,
+        mb: 10,
       }}
     >
       <Typography

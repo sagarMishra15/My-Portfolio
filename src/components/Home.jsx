@@ -29,8 +29,6 @@ export const Home = () => {
               variant="h6"
               sx={{
                 fontSize: 30,
-                // fontWeight: "bo",
-                // fontStyle:''
                 color: "#03045E",
               }}
             >
@@ -102,9 +100,6 @@ export const Home = () => {
         <Grid
           size={{ xs: 12, md: 5, lg: 5 }}
           sx={{
-            // border: "1px solid black",
-            // minHeight: 600,
-            // minWidth: "50%",
             display: "flex",
             alignItems: "center",
           }}

@@ -1,9 +1,11 @@
-import { Box, ThemeProvider } from "@mui/material";
+import { ThemeProvider } from "@mui/material";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
-import theme from "./Theme"; 
+import { Work } from "./components/Work";
+import { Contact } from "./components/Contact";
+import theme from "./Theme";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Work />
+      <Contact />
     </ThemeProvider>
   );
 }
