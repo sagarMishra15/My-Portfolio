@@ -69,6 +69,13 @@ export const Contact = () => {
             gutterBottom
             sx={{ color: "#03045E", fontSize: 24 }}
           >
+            www.linkedin.com/in/sagar-mishra15
+          </Typography>
+          <Typography
+            variant="body1"
+            gutterBottom
+            sx={{ color: "#03045E", fontSize: 24 }}
+          >
             1998sagar15@gmail.com
           </Typography>
           <Typography
@@ -77,13 +84,6 @@ export const Contact = () => {
             sx={{ color: "#03045E", fontSize: 24 }}
           >
             +91 7982978803
-          </Typography>
-          <Typography
-            variant="body1"
-            gutterBottom
-            sx={{ color: "#03045E", fontSize: 24 }}
-          >
-            www.linkedin.com/in/sagar-mishra15
           </Typography>
         </Grid>
       </Grid>
