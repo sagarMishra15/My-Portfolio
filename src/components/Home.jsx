@@ -12,7 +12,7 @@ export const Home = () => {
     >
       <Grid container>
         <Grid
-          size={{ xs: 12, md: 7, lg: 7 }}
+          size={{ xs: 12, md: 12, lg: 7 }}
           sx={{
             // border: "1px solid black",
             display: "flex",
@@ -98,7 +98,7 @@ export const Home = () => {
           </Box>
         </Grid>
         <Grid
-          size={{ xs: 12, md: 5, lg: 5 }}
+          size={{ sm: 12, md: 12, lg: 5 }}
           sx={{
             display: "flex",
             alignItems: "center",
@@ -107,7 +107,7 @@ export const Home = () => {
           <img
             src={home}
             alt="Home Image"
-            style={{ maxWidth: "100%", height: "auto", paddingLeft: 40 }}
+            style={{ maxWidth: "100%", height: "auto", paddingLeft: 20 }}
           />
         </Grid>
       </Grid>
