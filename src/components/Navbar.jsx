@@ -32,7 +32,7 @@ export const Navbar = () => {
             fontSize: 24,
           }}
         >
-          || SAGAR ||
+          SAGAR
         </Typography>
       </Box>
       <Box

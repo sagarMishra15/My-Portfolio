@@ -1,6 +1,8 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import workImg1 from "../assets/work_img1.svg";
 import workImg2 from "../assets/work_img2.svg";
+import github from "../assets/github-logo.svg";
+import link from "../assets/link.svg";
 
 export const Work = () => {
   return (
@@ -9,8 +11,8 @@ export const Work = () => {
         // border: "1px solid blue",
         // height: 500,
         // width: "100%",
-        mx: 19,
-        mb: 10,
+        mx: { xs: 0, sm: 10, lg: 19 },
+        mb: { xs: 0, sm: 10 },
       }}
     >
       <Typography
@@ -32,18 +34,18 @@ export const Work = () => {
         sx={{
           maxWidth: 900,
           color: "#03045E",
-          fontSize: 24,
-          mb: 15,
+          fontSize: { xs: 15, sm: 20, lg: 24 },
+          mb: { xs: 5, lg: 15 },
         }}
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate
-        tristique quam felis. Id phasellus dui orci vulputate consequat nulla
-        proin. Id sit scelerisque neque, proin bibendum diam.
+        Throughout my career, I have worked on multiple projects including
+        professional and personal to understand the end-to-end flow of
+        functionalities.
       </Typography>
 
       <Grid
         container
-        spacing={20}
+        spacing={{ xs: 1, sm: 20 }}
         sx={{
           color: "#03045E",
         }}
@@ -80,7 +82,7 @@ export const Work = () => {
               }}
               className="hover-overlay"
             >
-              Some Case Study
+              Banking System
             </Box>
           </Box>
           <Typography
@@ -90,17 +92,17 @@ export const Work = () => {
               fontStyle: "italic",
             }}
           >
-            November 24, 2019
+            December 2024
           </Typography>
           <Typography
             gutterBottom
             variant="h5"
             sx={{
-              fontSize: 24,
+              fontSize: { xs: 15, sm: 20, lg: 24 },
               fontWeight: "bold",
             }}
           >
-            Some Case Study
+            Banking System
           </Typography>
           <Typography
             variant="body1"
@@ -108,15 +110,47 @@ export const Work = () => {
             sx={{
               // maxWidth: 900,
               color: "#03045E",
-              fontSize: 18,
-              mb: 10,
+              fontSize: { xs: 15, sm: 20, lg: 18 },
+              // mb: 3,
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-            vulputate tristique quam felis. Id phasellus dui orci vulputate
-            consequat nulla proin. Id sit scelerisque neque, proin bibendum
-            diam.
+            Built a secure banking API with JWT authentication and role-based
+            access for Admin, Bank Manager, and Customer roles. Implemented user
+            registration, login, account creation, DTO filters, Swagger
+            documentation, and added exception handling with transactions for
+            smooth balance management.
           </Typography>
+          <Typography sx={{ mb: 3 }}>
+            <span style={{ fontWeight: "bold" }}>Tech used:</span> Springboot |
+            PostgreSQL | Postman | Swagger
+          </Typography>
+
+          <Button
+            sx={{
+              borderRadius: 2,
+              width: 200,
+              height: 49,
+              marginTop: 1,
+              mb: 1,
+              border: "2px solid #474306",
+              color: "#474306",
+            }}
+            onClick={() =>
+              window.open("https://github.com/sagarMishra15/Bank", "_blank")
+            }
+          >
+            <img
+              src={github}
+              alt="Github Logo"
+              style={{
+                width: 24,
+                height: 24,
+              }}
+            />
+            <Typography sx={{ marginLeft: 1, fontWeight: "bold" }}>
+              View on Github
+            </Typography>
+          </Button>
         </Grid>
         <Grid size={{ xs: 12, md: 6, lg: 6 }}>
           <Box sx={{ position: "relative", display: "inline-block" }}>
@@ -130,7 +164,6 @@ export const Work = () => {
                 transition: "0.3s ease-in-out",
               }}
             />
-
             <Box
               sx={{
                 position: "absolute",
@@ -150,7 +183,7 @@ export const Work = () => {
               }}
               className="hover-overlay"
             >
-              Some Case Study
+              Landing Page
             </Box>
           </Box>
           <Typography
@@ -160,17 +193,17 @@ export const Work = () => {
               fontStyle: "italic",
             }}
           >
-            November 24, 2019
+            April 2025
           </Typography>
           <Typography
             gutterBottom
             variant="h5"
             sx={{
-              fontSize: 24,
+              fontSize: { xs: 15, sm: 20, lg: 24 },
               fontWeight: "bold",
             }}
           >
-            Some Case Study
+            Landing Page
           </Typography>
           <Typography
             variant="body1"
@@ -178,15 +211,77 @@ export const Work = () => {
             sx={{
               // maxWidth: 900,
               color: "#03045E",
-              fontSize: 18,
-              mb: 10,
+              fontSize: { xs: 15, sm: 20, lg: 18 },
+              mb: 2,
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
-            vulputate tristique quam felis. Id phasellus dui orci vulputate
-            consequat nulla proin. Id sit scelerisque neque, proin bibendum
-            diam.
+            Developed a responsive landing page using React and MUI, featuring
+            multiple structured sections including About, Services, Pricing,
+            Features, FAQs, Contact Us, and Footer. The design ensures seamless
+            navigation and an intuitive user experience, maintaining consistency
+            across all components while effectively showcasing key information
+            and offerings.
           </Typography>
+          <Button
+            sx={{
+              borderRadius: 2,
+              width: 200,
+              height: 49,
+              marginTop: 1,
+              mb: 1,
+              border: "2px solid #474306",
+              color: "#474306",
+            }}
+            onClick={() =>
+              window.open(
+                "https://github.com/sagarMishra15/landingPage-main",
+                "_blank"
+              )
+            }
+          >
+            <img
+              src={github}
+              alt="Github Logo"
+              style={{
+                width: 24,
+                height: 24,
+              }}
+            />
+            <Typography sx={{ marginLeft: 1, fontWeight: "bold" }}>
+              View on Github
+            </Typography>
+          </Button>
+          <Button
+            sx={{
+              borderRadius: 2,
+              width: 180,
+              height: 49,
+              marginTop: 1,
+              mb: 1,
+              ml: 3,
+              border: "2px solid #2864EA",
+              color: "#fff",
+              bgcolor: "#2864EA",
+            }}
+            onClick={() =>
+              window.open(
+                "https://my-landing-page-indol-eight.vercel.app/",
+                "_blank"
+              )
+            }
+          >
+            <img
+              src={link}
+              alt="Link Logo"
+              style={{
+                width: 24,
+                height: 24,
+              }}
+            />
+            <Typography sx={{ marginLeft: 1, fontWeight: "bold" }}>
+              Visit Website
+            </Typography>
+          </Button>
         </Grid>
       </Grid>
       <style>

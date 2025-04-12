@@ -1,13 +1,13 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
-import home from "../assets/profile_image.png";
+import home from "../assets/profile_image2.png";
 
 export const Home = () => {
   return (
     <Box
       sx={{
         // border: "1px solid red",
-        mx: 19,
-        mb: 20,
+        mx: { xs: 5, sm: 10, lg: 19 },
+        mb: { xs: 5, sm: 10, lg:19 },
       }}
     >
       <Grid container>
@@ -74,6 +74,12 @@ export const Home = () => {
                   },
                 },
               }}
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1Ii2fAB2L5yLh67wlhr11wiNDfCHVKZYl/view?usp=sharing",
+                  "_blank"
+                )
+              }
             >
               <Box
                 sx={{
@@ -102,6 +108,7 @@ export const Home = () => {
           sx={{
             display: "flex",
             alignItems: "center",
+            mt: { xs: 5 },
           }}
         >
           <img

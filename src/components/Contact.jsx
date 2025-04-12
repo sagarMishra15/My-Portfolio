@@ -6,8 +6,8 @@ export const Contact = () => {
     <Box
       sx={{
         // border: "1px solid blue",
-        height: 500,
-        mx: 19,
+        mx: { xs: 0, sm: 10, lg: 19 },
+        mb: 5,
       }}
     >
       <Typography
@@ -55,8 +55,9 @@ export const Contact = () => {
             sx={{
               maxWidth: 650,
               color: "#03045E",
-              fontSize: 24,
-              mb: 5,
+              fontSize: { xs: 15, sm: 20, lg: 24 },
+              mb: { xs: 2, sm: 5 },
+              mt: { xs: 2 },
             }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
@@ -67,21 +68,21 @@ export const Contact = () => {
           <Typography
             variant="body1"
             gutterBottom
-            sx={{ color: "#03045E", fontSize: 24 }}
+            sx={{ color: "#03045E", fontSize: { xs: 15, sm: 20, lg: 24 } }}
           >
             www.linkedin.com/in/sagar-mishra15
           </Typography>
           <Typography
             variant="body1"
             gutterBottom
-            sx={{ color: "#03045E", fontSize: 24 }}
+            sx={{ color: "#03045E", fontSize: { xs: 15, sm: 20, lg: 24 } }}
           >
             1998sagar15@gmail.com
           </Typography>
           <Typography
             variant="body1"
             gutterBottom
-            sx={{ color: "#03045E", fontSize: 24 }}
+            sx={{ color: "#03045E", fontSize: { xs: 15, sm: 20, lg: 24 } }}
           >
             +91 7982978803
           </Typography>
