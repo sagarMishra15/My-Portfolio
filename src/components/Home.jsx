@@ -7,7 +7,7 @@ export const Home = () => {
       sx={{
         // border: "1px solid red",
         mx: { xs: 5, sm: 10, lg: 19 },
-        mb: { xs: 5, sm: 10, lg:19 },
+        mb: { xs: 5, sm: 10, lg: 19 },
       }}
     >
       <Grid container>
@@ -114,7 +114,11 @@ export const Home = () => {
           <img
             src={home}
             alt="Home Image"
-            style={{ maxWidth: "100%", height: "auto", paddingLeft: 20 }}
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              paddingLeft: { xs: 0, md: 20 },
+            }}
           />
         </Grid>
       </Grid>

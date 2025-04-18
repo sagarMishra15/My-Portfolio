@@ -29,7 +29,7 @@ export const Navbar = () => {
           sx={{
             color: "#03045E",
             fontWeight: 600,
-            fontSize: 24,
+            fontSize: { xs: 15, md: 24 },
           }}
         >
           SAGAR
@@ -49,7 +49,7 @@ export const Navbar = () => {
         <Typography
           sx={{
             // fontWeight: 200,
-            fontSize: 19,
+            fontSize: { xs: 15, md: 19 },
             cursor: "pointer",
             color: "#03045E",
           }}
@@ -60,7 +60,7 @@ export const Navbar = () => {
         <Typography
           sx={{
             // fontWeight: 200,
-            fontSize: 19,
+            fontSize: { xs: 15, md: 19 },
             cursor: "pointer",
             color: "#03045E",
           }}
@@ -71,7 +71,7 @@ export const Navbar = () => {
         <Typography
           sx={{
             // fontWeight: 200,
-            fontSize: 19,
+            fontSize: { xs: 15, md: 19 },
             cursor: "pointer",
             color: "#03045E",
           }}
@@ -88,6 +88,7 @@ export const Navbar = () => {
           flexDirection: "row",
           justifyContent: "space-around",
           alignItems: "center",
+          // opacity:{xs:0,md:100}
         }}
       >
         <img

@@ -258,7 +258,7 @@ export const Work = () => {
               height: 49,
               marginTop: 1,
               mb: 1,
-              ml: 3,
+              ml: { xs: 0, sm:3, md: 3 },
               border: "2px solid #2864EA",
               color: "#fff",
               bgcolor: "#2864EA",
