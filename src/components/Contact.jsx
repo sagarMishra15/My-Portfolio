@@ -49,7 +49,7 @@ export const Contact = () => {
             }
           }
         >
-          <Typography
+          {/* <Typography
             variant="body1"
             gutterBottom
             sx={{
@@ -64,7 +64,7 @@ export const Contact = () => {
             vulputate tristique quam felis. Id phasellus dui orci vulputate
             consequat nulla proin. Id sit scelerisque neque, proin bibendum
             diam.
-          </Typography>
+          </Typography> */}
           <Typography
             variant="body1"
             gutterBottom

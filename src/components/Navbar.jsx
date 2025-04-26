@@ -1,7 +1,9 @@
-import { Box, Typography } from "@mui/material";
-import image1 from "../assets/navbar_img1.svg";
-import image2 from "../assets/navbar_img2.svg";
-import image3 from "../assets/navbar_img3.svg";
+import { Box, Tooltip, Typography } from "@mui/material";
+// import image2 from "../assets/navbar_img2.svg";
+// import image3 from "../assets/navbar_img3.svg";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import CallIcon from "@mui/icons-material/Call";
 
 export const Navbar = () => {
   return (
@@ -30,6 +32,7 @@ export const Navbar = () => {
             color: "#03045E",
             fontWeight: 600,
             fontSize: { xs: 15, md: 24 },
+            opacity: { xs: 0, md: 100 },
           }}
         >
           SAGAR
@@ -44,6 +47,7 @@ export const Navbar = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
+          ml:{xs:-10,md:0}
         }}
       >
         <Typography
@@ -91,21 +95,59 @@ export const Navbar = () => {
           // opacity:{xs:0,md:100}
         }}
       >
-        <img
-          src={image1}
-          alt="Navbar Icon 1"
-          style={{ maxWidth: "100%", maxHeight: "100%", cursor: "pointer" }}
-        />
-        <img
-          src={image2}
-          alt="Navbar Icon 2"
-          style={{ maxWidth: "100%", maxHeight: "100%", cursor: "pointer" }}
-        />
-        <img
-          src={image3}
-          alt="Navbar Icon 3"
-          style={{ maxWidth: "100%", maxHeight: "100%", cursor: "pointer" }}
-        />
+        <Tooltip title="+91 7982978803">
+          <CallIcon
+            sx={{
+              cursor: "pointer",
+              color: "#03045E",
+              fontSize: {
+                xs: "20px", // extra-small screens (mobile)
+                sm: "24px", // small screens
+                md: "30px", // medium screens and up
+              },
+            }}
+          />
+        </Tooltip>
+
+        <Tooltip title="GMail">
+          <EmailIcon
+            sx={{
+              cursor: "pointer",
+              color: "#03045E",
+              fontSize: {
+                xs: "20px", // extra-small screens (mobile)
+                sm: "24px", // small screens
+                md: "30px", // medium screens and up
+              },
+            }}
+            onClick={() =>
+              window.open(
+                "https://mail.google.com/mail/u/0/?view=cm&to=1998sagar15@gmail.com",
+                "_blank"
+              )
+            }
+          />
+        </Tooltip>
+
+        <Tooltip title="LinkedIn">
+          <LinkedInIcon
+            sx={{
+              cursor: "pointer",
+              color: "#03045E",
+              fontSize: {
+                xs: "20px", // extra-small screens (mobile)
+                sm: "24px", // small screens
+                md: "30px", // medium screens and up
+              },
+            }}
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/sagar-mishra15",
+                "_blank"
+              )
+            }
+          />
+        </Tooltip>
       </Box>
     </Box>
   );

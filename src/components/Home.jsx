@@ -6,7 +6,7 @@ export const Home = () => {
     <Box
       sx={{
         // border: "1px solid red",
-        mx: { xs: 5, sm: 10, lg: 19 },
+        mx: { xs: 1, sm: 10, lg: 19 },
         mb: { xs: 5, sm: 10, lg: 19 },
       }}
     >
@@ -62,6 +62,7 @@ export const Home = () => {
 
             <Box
               sx={{
+                // pl:{xs:5, sm:0},
                 bgcolor: "#F5EE84",
                 maxWidth: 158,
                 height: 62,

@@ -10,7 +10,7 @@ import {
 
 export const About = () => {
   return (
-    <Box
+    <Box 
       sx={{
         mx: { xs: 0, sm: 10, lg: 19 },
         mb: { xs: 0, sm: 10 },
