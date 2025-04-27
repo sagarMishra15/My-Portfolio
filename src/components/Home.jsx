@@ -77,7 +77,7 @@ export const Home = () => {
               }}
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1Ii2fAB2L5yLh67wlhr11wiNDfCHVKZYl/view?usp=sharing",
+                  "https://drive.google.com/file/d/1whrkoPL1BAtbKRGT5ywITUC11nouVokD/view?usp=sharing",
                   "_blank"
                 )
               }
